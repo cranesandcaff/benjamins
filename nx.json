@@ -5,14 +5,17 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
-        "accessToken": "ZDY1NmM3NDctMWRmZC00ZjJkLTg0YzItNzBlMzA3MjVlNWFmfHJlYWQtd3JpdGU="
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "NTQ5MTM3MWEtZjk4Ni00M2E1LWFjN2QtMWJhMDVjZmJlYzgwfHJlYWQtd3JpdGU="
       }
     }
+  },
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "packages"
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*"],
+    "production": ["!{projectRoot}/**/*.spec.tsx"]
   }
 }

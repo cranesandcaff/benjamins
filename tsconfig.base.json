@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@benjamins/models": [
+        "./packages/models/dist"
+      ]
+    }
+  }
+}
